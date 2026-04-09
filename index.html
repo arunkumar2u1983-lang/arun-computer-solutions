@@ -1,62 +1,184 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Arun Computer Solutions</title>
-  <style>
-    body { font-family: Arial; margin: 0; padding: 0; }
-    header { background: #0a2540; color: white; padding: 20px; text-align: center; }
-    section { padding: 20px; }
-    .hero { text-align: center; }
-    .hero img { width: 150px; border-radius: 50%; }
-    .services { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px,1fr)); gap: 15px; }
-    .card { border: 1px solid #ddd; padding: 15px; border-radius: 10px; }
-    .btn { display: inline-block; padding: 10px 15px; background: green; color: white; text-decoration: none; border-radius: 5px; }
-    footer { background: #0a2540; color: white; text-align: center; padding: 10px; }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Arun Computer Solutions</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f7fa;
+}
+
+/* HEADER */
+header {
+    background: #0a2540;
+    color: white;
+    padding: 15px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h2 {
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+/* HERO SECTION */
+.hero {
+    background: linear-gradient(to right, #0a2540, #1d4ed8);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.hero img {
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 32px;
+}
+
+.hero button {
+    background: #22c55e;
+    border: none;
+    padding: 12px 25px;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* SERVICES */
+.services {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.services h2 {
+    margin-bottom: 30px;
+}
+
+.service-box {
+    display: inline-block;
+    width: 250px;
+    background: white;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #ccc;
+}
+
+/* ABOUT */
+.about {
+    background: #e2e8f0;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* CONTACT */
+.contact {
+    padding: 40px;
+    text-align: center;
+}
+
+.contact button {
+    background: #25D366;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* FOOTER */
+footer {
+    background: #0a2540;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+</style>
 </head>
-<body><header>
-  <h1>Arun Computer Solutions</h1>
-  <p>WiFi | CCTV | Networking | Website Development in Mumbai</p>
-</header><section class="hero">
-  <img src="Arun.jpg" alt="Arun Kumar">
-  <h2>Hello, I'm Arun Kumar</h2>
-  <p>Expert in WiFi Installation, Network Setup & IT Solutions in Mumbai</p>
-  <a class="btn" href="https://wa.me/918692054723">Chat on WhatsApp</a>
-</section><section>
-  <h2>Our Services</h2>
-  <div class="services">
-    <div class="card">
-      <h3>WiFi Installation</h3>
-      <p>Home & Office WiFi setup with full coverage.</p>
+
+<body>
+
+<header>
+    <h2>Arun Computer Solutions</h2>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <!-- Upload your image as arun.jpg -->
+    <img src="Arun.jpg" alt="Arun">
+    <h1>Reliable WiFi & IT Solutions</h1>
+    <p>For Homes & Businesses</p>
+    <button onclick="window.location.href='tel:8692054723'">Call Now</button>
+</section>
+
+<section id="services" class="services">
+    <h2>Our Services</h2>
+
+    <div class="service-box">
+        <h3>WiFi Setup</h3>
+        <p>High-speed wireless solutions for home & office</p>
     </div>
-    <div class="card">
-      <h3>CCTV Installation</h3>
-      <p>Secure your home and office with CCTV systems.</p>
+
+    <div class="service-box">
+        <h3>Network Installation</h3>
+        <p>Complete LAN & structured cabling</p>
     </div>
-    <div class="card">
-      <h3>Network Setup</h3>
-      <p>Complete office networking solutions.</p>
+
+    <div class="service-box">
+        <h3>CCTV Setup</h3>
+        <p>Secure your home & business</p>
     </div>
-    <div class="card">
-      <h3>Website Development</h3>
-      <p>Get your business website ready in 5 days.</p>
+
+    <div class="service-box">
+        <h3>AMC Support</h3>
+        <p>Monthly maintenance & support services</p>
     </div>
-  </div>
-</section><section>
-  <h2>Why Choose Us?</h2>
-  <ul>
-    <li>✔ 10+ Years Experience</li>
-    <li>✔ Fast Service</li>
-    <li>✔ Affordable Pricing</li>
-    <li>✔ Mumbai Local Support</li>
-  </ul>
-</section><section>
-  <h2>Contact Us</h2>
-  <p>📍 Mumbai, India</p>
-  <p>📞 +91 8692054723</p>
-  <a class="btn" href="https://wa.me/918692054723">Get Free Consultation</a>
-</section><footer>
-  <p>© 2026 Arun Computer Solutions</p>
-</footer></body>
+
+</section>
+
+<section id="about" class="about">
+    <h2>About Us</h2>
+    <p>
+        Arun Computer Solutions provides professional IT and networking services 
+        with reliable support and affordable pricing. We specialize in WiFi, CCTV, 
+        and complete network solutions.
+    </p>
+</section>
+
+<section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>Call or WhatsApp for quick support</p>
+
+    <!-- Replace number -->
+    <button onclick="window.open('https://wa.me/918692054723')">
+        Chat on WhatsApp
+    </button>
+</section>
+
+<footer>
+    <p>© 2026 Arun Computer Solutions</p>
+</footer>
+
+</body>
 </html>
